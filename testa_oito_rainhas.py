@@ -1,10 +1,11 @@
 ''' Importações de funções'''
 from oito_rainhas import tabuleiro
-from funcoes_auxiliares_de_teste import *
+from funcoes_auxiliares_de_teste import verifica_se_ordem_da_matrix_e_8, verifica_se_ha_8_rainhas
 
 def teste_validade_tabuleiro():
     '''Verifica se o tabuleiro dado pelo usuário é de ordem 8'''
-    tab = [8 * [0,0,0,0,0,0,0,0] for i in range(8)]
+    tab = [8 * [0] for i in range(8)]
+    print(tab)
 
     ordem_tab = verifica_se_ordem_da_matrix_e_8(tab)
     ordem_tabuleiro = verifica_se_ordem_da_matrix_e_8(tabuleiro)
