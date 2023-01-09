@@ -31,4 +31,18 @@ def verifica_se_ha_8_rainhas(matrix):
                 contador_de_rainhas += 1
 
     return contador_de_rainhas
-    
+
+def ataque_horizontal(matrix):
+    '''Retorna se True se há mais de uma rainha em cada linha'''
+
+    tamanho_matrix = len(matrix)
+
+    for i in range(tamanho_matrix):
+        rainhas_na_linha = matrix[i].count(1)
+
+        if rainhas_na_linha != 1:
+            break
+
+    if rainhas_na_linha != 1:
+        return True
+    return False
