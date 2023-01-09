@@ -1,4 +1,6 @@
 def verifica_se_ordem_da_matrix_e_8(matrix):
+    '''Verifica se a ordem de uma dada matrix é 8'''
+    
     contador_linhas = 0
     contador_colunas = 0
 
