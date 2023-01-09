@@ -25,3 +25,10 @@ def teste_se_nao_ha_ataque_horizontal():
     atacada = funcoes_auxiliares_de_teste.ataque_horizontal(tabuleiro)
 
     assert atacada is False
+
+def teste_se_nao_ha_ataque_vertical():
+    '''Verifica se há rainha em questão será atacada verticalmente'''
+
+    atacada = funcoes_auxiliares_de_teste.ataque_vertical(tabuleiro)
+
+    assert atacada is False

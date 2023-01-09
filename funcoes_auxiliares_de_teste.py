@@ -46,3 +46,5 @@ def ataque_horizontal(matrix):
     if rainhas_na_linha != 1:
         return True
     return False
+
+
