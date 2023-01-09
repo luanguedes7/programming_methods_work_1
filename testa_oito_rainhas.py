@@ -32,3 +32,10 @@ def teste_se_nao_ha_ataque_vertical():
     atacada_vertical = funcoes_auxiliares_de_teste.ataque_vertical(tabuleiro)
 
     assert atacada_vertical is False
+
+def teste_se_nao_ha_ataque_diagonal():
+    
+    atacada_diagonal = funcoes_auxiliares_de_teste.ataque_diagonal(tabuleiro)
+
+    assert atacada_diagonal is False
+    

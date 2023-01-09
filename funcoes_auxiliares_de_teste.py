@@ -1,4 +1,6 @@
 '''Alguma funções destinadas para o módulo de testes e a implementação das oito rainhas'''
+from oito_rainhas import tabuleiro
+
 
 def verifica_se_ordem_da_matrix_e_8(matrix):
     '''Verifica se a ordem de uma dada matrix é 8'''
@@ -18,6 +20,7 @@ def verifica_se_ordem_da_matrix_e_8(matrix):
         return 8
     return 0
 
+
 def verifica_se_ha_8_rainhas(matrix):
     '''Retorna o número de rainhas'''
 
@@ -30,6 +33,7 @@ def verifica_se_ha_8_rainhas(matrix):
                 contador_de_rainhas += 1
 
     return contador_de_rainhas
+
 
 def ataque_horizontal(matrix):
     '''Retorna se True se há mais de uma rainha em cada linha'''
@@ -45,6 +49,7 @@ def ataque_horizontal(matrix):
     if rainhas_na_linha > 1:
         return True
     return False
+
 
 def ataque_vertical(matrix):
     '''Retorna se True se há mais de uma rainha em cada coluna'''
@@ -65,5 +70,64 @@ def ataque_vertical(matrix):
         rainhas_na_coluna = 0
 
     if rainhas_na_coluna > 1:
+        return True
+    return False
+
+
+def ataque_diagonal_principal(matrix):
+
+    tem_ataque = False
+    flag = False
+
+    for i in range(8):
+        for j in range(8):
+            if matrix[i][j] == 1:
+                coluna = j
+                flag = True
+                break
+
+        if flag == True and i <= 6 and coluna <= 6:
+            flag = False
+
+            for k in range(i+1, 8):
+                for l in range(coluna + 1, coluna + 2):
+                    coluna += 1
+                    if matrix[k][l] == 1:
+                        tem_ataque = True
+                        break
+                if tem_ataque == True or coluna == 7:
+                    break
+
+    return tem_ataque
+
+
+def ataque_diagonal_secundaria(matrix):
+
+    tem_ataque = False
+    flag = False
+
+    for i in range(7, -1, -1):
+        for j in range(7, -1, -1):
+            if matrix[i][j] == 1:
+                coluna = j
+                flag = True
+                break
+
+        if flag == True and i >= 1 and coluna >= 1:
+            flag = False
+
+            for k in range(i-1, 0, -1):
+                for l in range(coluna - 1, coluna - 2, -1):
+                    coluna -= 1
+                    if matrix[k][l] == 1:
+                        tem_ataque = True
+                        break
+                if tem_ataque == True or coluna == 0:
+                    break
+
+    return tem_ataque
+
+def ataque_diagonal(matrix):
+    if ataque_diagonal_principal(matrix) or ataque_diagonal_secundaria(matrix):
         return True
     return False
