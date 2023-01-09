@@ -134,6 +134,16 @@ def ataque_diagonal(matrix):
         return True
     return False
 
+def e_uma_solucao(matrix):
+    '''Retorna um valor indicando se é a solução para o desafio ou não'''
+
+    if verifica_se_ha_8_rainhas(matrix) != 8 or verifica_se_ordem_da_matrix_e_8(matrix) != 8:
+        return -1
+    if ataque_horizontal(matrix) is True or ataque_vertical(matrix) is True:
+        return 0
+    if ataque_diagonal(matrix) is True:
+        return 0
+    return 1
 
 tabuleiro = [[0,0,0,0,1,0,0,0],[0,1,0,0,0,0,0,0], [0,0,0,1,0,0,0,0], [0,0,0,0,0,0,1,0],
 [0,0,1,0,0,0,0,0], [0,0,0,0,0,0,0,1], [0,0,0,0,0,1,0,0],[1,0,0,0,0,0,0,0]]

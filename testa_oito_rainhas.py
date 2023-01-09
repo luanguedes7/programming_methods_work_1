@@ -19,6 +19,7 @@ def teste_de_verificacao_de_8_rainhas():
 
     assert num_rainhas == 8
 
+
 def teste_se_nao_ha_ataque_horizontal():
     '''Verifica se há rainha em questão será atacada horizontalmente'''
 
@@ -45,4 +46,4 @@ def teste_se_o_tabuleiro_e_solucao():
 
     e_solucao = oito_rainhas.e_uma_solucao(tabuleiro)
 
-    assert e_solucao is True
+    assert e_solucao == 1
