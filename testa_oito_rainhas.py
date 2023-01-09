@@ -22,13 +22,13 @@ def teste_de_verificacao_de_8_rainhas():
 def teste_se_nao_ha_ataque_horizontal():
     '''Verifica se há rainha em questão será atacada horizontalmente'''
 
-    atacada = funcoes_auxiliares_de_teste.ataque_horizontal(tabuleiro)
+    atacada_horizontal = funcoes_auxiliares_de_teste.ataque_horizontal(tabuleiro)
 
-    assert atacada is False
+    assert atacada_horizontal is False
 
 def teste_se_nao_ha_ataque_vertical():
     '''Verifica se há rainha em questão será atacada verticalmente'''
 
-    atacada = funcoes_auxiliares_de_teste.ataque_vertical(tabuleiro)
+    atacada_vertical = funcoes_auxiliares_de_teste.ataque_vertical(tabuleiro)
 
-    assert atacada is False
+    assert atacada_vertical is False

@@ -3,7 +3,6 @@
 def verifica_se_ordem_da_matrix_e_8(matrix):
     '''Verifica se a ordem de uma dada matrix é 8'''
 
-    contador_linhas = 0
     contador_colunas = 0
 
     contador_linhas = len(matrix)
@@ -40,11 +39,31 @@ def ataque_horizontal(matrix):
     for i in range(tamanho_matrix):
         rainhas_na_linha = matrix[i].count(1)
 
-        if rainhas_na_linha != 1:
+        if rainhas_na_linha > 1:
             break
 
-    if rainhas_na_linha != 1:
+    if rainhas_na_linha > 1:
         return True
     return False
 
+def ataque_vertical(matrix):
+    '''Retorna se True se há mais de uma rainha em cada coluna'''
 
+    tamanho_matrix = len(matrix)
+    coluna = 0
+    rainhas_na_coluna = 0
+
+    for i in range(8):
+        for i in range(tamanho_matrix):
+            if matrix[i][coluna] == 1:
+                rainhas_na_coluna += 1
+
+        coluna += 1
+
+        if rainhas_na_coluna > 1:
+            break
+        rainhas_na_coluna = 0
+
+    if rainhas_na_coluna > 1:
+        return True
+    return False
