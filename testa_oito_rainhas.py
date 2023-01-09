@@ -18,3 +18,10 @@ def teste_de_verificacao_de_8_rainhas():
     num_rainhas = verifica_se_ha_8_rainhas(tabuleiro)
 
     assert num_rainhas == 8
+
+def teste_ataque_horizontal():
+    '''Verifica se há rainha em questão será atacada horizontalmente'''
+
+    atacada = ataque_horizontal()
+
+    assert atacada == True
