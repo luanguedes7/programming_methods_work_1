@@ -34,8 +34,9 @@ def teste_se_nao_ha_ataque_vertical():
     assert atacada_vertical is False
 
 def teste_se_nao_ha_ataque_diagonal():
-    
+    '''Verifica se alguma rainha está sendo atacada verticalmente'''
+
     atacada_diagonal = funcoes_auxiliares_de_teste.ataque_diagonal(tabuleiro)
 
     assert atacada_diagonal is False
-    
+
