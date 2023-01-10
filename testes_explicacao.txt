@@ -1,0 +1,39 @@
+Trabalho das Oito Rainhas
+
+O trabalho foi desenvolvido, utilizando da metodologia TDD, em 3 módulos: testa_oito_rainhas; oito_rainhas; oito_rainhas_para_usuario.
+Nesse sentido, há dois módulos de implementação e um de teste. Os módulo de implementação são: oito_rainhas; oito_rainhas_para_usuario.
+O primeiro refere-se ao módulo destinado à criação de funções a serem utilizadas nos teste (mas que também foram utilizadas no outro arquivo).
+O segundo refere-se ao módulo destinado à verificação de um tabuleiro dado por um usuário (parte adicional feita por mim).
+No que concerce ao módulo de testes, há 6 funções:
+    1)teste_validade_tabuleiro
+    2)teste_de_verificacao_de_8_rainhas
+    3)teste_se_nao_ha_ataque_horizontal
+    4)teste_se_nao_ha_ataque_vertical
+    5)teste_se_nao_ha_ataque_diagonal
+    6)teste_se_o_tabuleiro_e_solucao
+
+Nesse sentido, segue uma breve explicação de cada:
+
+    1) Verifica se a entrada é de fato um tabuleiro 8x8 a partir de uma função. Caso seja, a função retorna o inteiro 8. 
+       Se não, retorna 0. O teste compara se a função com a entrada em questão retorna de fato 8, indicando que é a ordem determinada.
+
+    2) Verifica se de fato há 8 rainhas no tabuleiro. Para tal, utiliza-se de uma função que fará uma soma de todas as rainhas presentes,
+       retornando o valor da soma. O teste compara se o valor retornado pela função é 8.
+
+    3) Verifica se de fato não há ataque horizontalmente entre as rainhas. Para tal, utiliza-se de uma função que verifica se há
+       mais de um numeral "1" na mesma linha, retornando "True" se houver. O teste compara se o valor retornado é "False".
+
+    4) Verifica se de fato não há ataque verticalmente entre as rainhas. Para tal, utiliza-se de uma função que verifica se há
+       mais de um numeral "1" na mesma coluna, retornando "True" se houver. O teste compara se o valor retornado é "False".
+
+    5) Verifica se de fato não há ataque diagonalmente entre as rainhas. Para tal, utiliza-se de uma função que verifica, a partir 
+       de outras duas funções, se há mais de uma rainha na diagonal principal ou secundária de uma determinada rainha, retornando
+       "True" se houver. O teste compara se o valor retornado é "False".
+
+    6) Verifica se de fato o tabuleiro é a solução do problema. Para tal, utiliza-se de todas as funções descritas anteriormente, 
+       retornando um valor (definido no pdf enviado no aprender) para cada caso. O teste compara se o valor retornado é 1.
+
+Por fim, cabe mencionar que, apesar de haver um tabuleiro teste no trabalho em questão, foram utilizados vários exemplos para a 
+validação das funções e dos testes. Contudo, para uma melhor vizualização do código, optei por deixar um tabuleiro, o qual pode serem
+facilmente alterado, de modo a validar ou não os teste. Ademais, ainda há um arquivo para caso a entrada seja digitada pelo usuário,
+corroborando para validade das funções. 
