@@ -1,0 +1,19 @@
+Logs, obtidos a partir do git log, em arquivo txt
+
+0000000000000000000000000000000000000000 295894c1a4cb8e95a7b2cd4528c77bda7fdc192e luanguedes7 <lcrisley98@gmail.com> 1672684312 -0300	commit (initial): Criaçao dos arquivos iniciais do trabalho
+295894c1a4cb8e95a7b2cd4528c77bda7fdc192e 0000000000000000000000000000000000000000 luanguedes7 <lcrisley98@gmail.com> 1672684597 -0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 295894c1a4cb8e95a7b2cd4528c77bda7fdc192e luanguedes7 <lcrisley98@gmail.com> 1672684597 -0300	Branch: renamed refs/heads/master to refs/heads/main
+295894c1a4cb8e95a7b2cd4528c77bda7fdc192e 9311e71cd44d87512f7eccdd29feb63f4dda92b9 luanguedes7 <lcrisley98@gmail.com> 1673220817 -0300	commit: Teste 1 - Verificação da Validade do Tabuleiro
+9311e71cd44d87512f7eccdd29feb63f4dda92b9 060cad3da619fee8e9dd27cd131ed43ed555f4c5 luanguedes7 <lcrisley98@gmail.com> 1673222988 -0300	commit: Teste 1 - Verificação do Tabuleiro(corrigido) e Implementação do código
+060cad3da619fee8e9dd27cd131ed43ed555f4c5 1784d7f78ac5a3fd1e8e8f3fd8b6e5245c33e608 luanguedes7 <lcrisley98@gmail.com> 1673224048 -0300	commit: Teste 1 - Refatoração Implementação 1 - Refatoração
+1784d7f78ac5a3fd1e8e8f3fd8b6e5245c33e608 1f7d3e99a2833c4c033c8579a1b9bad8139a2b39 luanguedes7 <lcrisley98@gmail.com> 1673225695 -0300	commit: Teste 2- Verificação de existência de somente 8 rainhas; Implementação 2 (funcoes_auxiliares)
+1f7d3e99a2833c4c033c8579a1b9bad8139a2b39 fda5fd2e2a06522815b81c91ca15e6c1665d4505 luanguedes7 <lcrisley98@gmail.com> 1673227498 -0300	commit: Teste 1 e 2 - Refatoração; Implementação 1 e 2 - Refatoração!
+fda5fd2e2a06522815b81c91ca15e6c1665d4505 8e833a16021564afbecd1b35928834ae1c95ae64 luanguedes7 <lcrisley98@gmail.com> 1673227781 -0300	commit: Teste 3 - Verificação de ataque horizontal contra uma rainha
+8e833a16021564afbecd1b35928834ae1c95ae64 6313baa06ac21b6bc131543873629e08ad5a2ce4 luanguedes7 <lcrisley98@gmail.com> 1673229006 -0300	commit: Teste 3 - Refatoração; Implementação 3
+6313baa06ac21b6bc131543873629e08ad5a2ce4 652dd32bdc1771f5ff4da971fa82831a5bbc6f07 luanguedes7 <lcrisley98@gmail.com> 1673229316 -0300	commit: Teste 4 - Verificação de Ataque Vertical
+652dd32bdc1771f5ff4da971fa82831a5bbc6f07 880518094341962f9e9854e093cde04ff51d0d1d luanguedes7 <lcrisley98@gmail.com> 1673231649 -0300	commit: Teste 4 - Refatoração; Implementação 4
+880518094341962f9e9854e093cde04ff51d0d1d 1c3b0a666d45da15d433066260a44fb82bd38bab luanguedes7 <lcrisley98@gmail.com> 1673285657 -0300	commit: Implementação 4 - Verificação de ataques diagonais
+1c3b0a666d45da15d433066260a44fb82bd38bab 1905e58539b140c5dd7c13bee82ee6d7588232ef luanguedes7 <lcrisley98@gmail.com> 1673286541 -0300	commit: Teste 4 - Refatoração; Implementaçã 4- Refatoração
+1905e58539b140c5dd7c13bee82ee6d7588232ef 0b5a4f2acd4743c466a90edfd28bb9b11aafc448 luanguedes7 <lcrisley98@gmail.com> 1673307275 -0300	commit: Teste 6 - Verificação se o tabuleiro é solução; Renomeação de outros arquivos
+0b5a4f2acd4743c466a90edfd28bb9b11aafc448 5541f9dcd17d2b2dab47701daaca62462e627cd6 luanguedes7 <lcrisley98@gmail.com> 1673308224 -0300	commit: Implementação 6 e algumas refatorações
+5541f9dcd17d2b2dab47701daaca62462e627cd6 b6b84569ae959916b9881fc1a1c02dee5c3b34b9 luanguedes7 <lcrisley98@gmail.com> 1673310024 -0300	commit: Teste explicativo no formato txt
